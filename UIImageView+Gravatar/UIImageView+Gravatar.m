@@ -40,7 +40,7 @@
 - (void)loadGravatar {
     [self setImageWithURL:[self gravatarURL:_email] placeholderImage:_placeholder completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
         if (!error) {
-            NSLog(@"[%@] Reached Gravatar Image for %@ at %@.\nNote: this does not mean that this email has a gravatar associated with it.",[self class],_email,[self gravatarURL:_email]);
+//            NSLog(@"[%@] Reached Gravatar Image for %@ at %@.\nNote: this does not mean that this email has a gravatar associated with it.",[self class],_email,[self gravatarURL:_email]);
         }
         else {
             NSLog(@"[%@] Unable to reach Gravatar Image for %@ at %@.",[self class],_email,[self gravatarURL:_email]);
@@ -53,7 +53,7 @@
         completed();
         
         if (!error) {
-            NSLog(@"[%@] Reached Gravatar Image for %@ at %@.\nNote: this does not mean that this email has a gravatar associated with it.",[self class],_email,[self gravatarURL:_email]);
+//            NSLog(@"[%@] Reached Gravatar Image for %@ at %@.\nNote: this does not mean that this email has a gravatar associated with it.",[self class],_email,[self gravatarURL:_email]);
         }
         else {
             NSLog(@"[%@] Unable to reach Gravatar Image for %@ at %@.",[self class],_email,[self gravatarURL:_email]);
